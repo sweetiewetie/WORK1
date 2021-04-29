@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link type="text/css" rel="stylesheet" href="menu.css">
+    <link type="image/x-icon" rel="shortcut icon" href="logo.jpg">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <title>미술관 건물 안내-환기 미술관</title>
+    <style>
+        section {
+            position: relative;
+            top: 10%;
+            left: 20%;
+            width: 60%;
+            
+            padding-bottom:20%;
+        
+        }
+
+
+        img {
+            position: relative;
+            left: 10%;
+            top:-5%;
+        }
+
+        div#txt_1 {
+            height: 90%;
+            display: none;
+        
+        }
+        div#txt_2 {
+            height: 70%;
+            display: none;
+        
+        }
+        div#txt_3 {
+            height: 70%;
+            display: none;
+        
+        }
+
+        div.img_box {
+            
+            height: 400px;
+            margin-top: 3%;
+            margin-bottom: 3%;
+        }
+
+        img.txt_img{
+            width: 40%;
+            height: 100%;
+
+        }
+
+        #txt_3_img{
+            position:relative;
+            left:20%;
+        }
+
+        p.txt {
+            position: relative;
+            /* left: 10%; */
+            width: 100%;
+            font-size: 18px;
+            text-align: justify;
+            line-height: 1.5;
+            margin-bottom:5%;
+        }
+
+    </style>
+    <script>
+        $(document).ready(function () {
+            $("#h2_1").click(function () {
+                $("#txt_1").slideToggle("slow");
+                
+            });
+            $("#h2_2").click(function () {
+                $("#txt_2").slideToggle("slow");
+                
+            });
+            $("#h2_3").click(function () {
+                $("#txt_3").slideToggle("slow");
+                
+            });
+        });
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="homie.html">환기 미술관<br>
+                <div class='en' id='first'>HWANKI MUSEUM</div>
+            </a></h1>
+        <nav id='top'>
+            <ul><b>
+                    <li class='topM'><a href='m1-1.html'>김환기<br>
+                            <div class='en'>KIMHWANKI</div>
+                        </a>
+                        <ul class='subM' id='sub1'>
+                            <li><a href='m1-1.html'>연보</a></li>
+
+                            <li><a href='m1-2.html'>작품세계</a></li>
+                        </ul>
+                    </li>
+                    <li class='topM'><a href='m2-1.html'>환기미술관<br>
+                            <div class='en'>ABOUT MUSEUM</div>
+                        </a>
+                        <ul class='subM' id='sub2'>
+                            <li><a href='m2-1.html'>설립자 메세지</a></li>
+                            <li><a href='m2-2.html'>디렉터 메세지</a></li>
+                            <li><a href='m2-3.html'>설계자 메세지</a></li>
+                            <li><a href='m2-4.html'>미술관 건물안내</a></li>
+                        </ul>
+                    </li>
+                    <li class='topM'><a href='m3-1.html'>전시안내<br>
+                            <div class='en'>EXHIBITION</div>
+                        </a>
+                        <ul class='subM' id='sub3'>
+                            <li><a href='m3-1.html'>현재전시</a></li>
+                            <li><a href='m3-2.html'>지난전시</a></li>
+                        </ul>
+                    </li>
+                    <li class='topM'><a href='m4.html' class='menuLink'>관람안내<br>
+                            <div class='en'>INFORMATION</div>
+                        </a></li>
+                </b>
+            </ul>
+            <nav>
+    </header>
+    <section>
+        <img src="미술관건물안내.jpg" width="80%" height="80%">
+        <br><br>
+        
+        <p>아래 중 알아보고 싶은 장소를 클릭해보세요</p>
+        <br><br>
+        <h2 id="h2_1" style="color:rgb(50, 51, 53)">본관 Main Building</h2>
+        <hr>
+        <div id='txt_1'>
+
+            <div class='img_box' ><img src="본관.jpg" class='txt_img'> <img src="본관_3.jpg" class='txt_img'></div>
+            <p class='txt'>
+                김환기가 애차했던 성북동 화실과 유사한 환경의 부암동에 위치한 환기 미술관은 1978년 설립된 환기재단을 기초로, 뉴욕시절 작가의 생활과 예술을 접할 기회가 많았던 재미건축가 우규승이
+                설계하였고
+                1990년부터 착공, 환기미술관 본관이 1992년 11월에 완공되어 개관하였다.<br><br>
+                환기미술관 본관은 대지를 둘러싼 주변 환경을 적용하여 부드러운 곡선으로 자연스럽게 형태를 강조하였으며,
+                건물 외관을 구성하는 재료도 주변 환경을 반영하여 하부부터 석재와 판재로 표현된 석재를 사용하였고 상부는 납을 입힌 동판으로 마무리하였다.<br><br>
+                본관은 지상 3층의 건물로 3개의 전시실과 사무실, 수장고, 도서실 등과 같은 공간으로 구성되어 있으며,
+                내부 공간은 주로 흰벽으로 처리되었으며, 공간의 폐쇄성을 해소하기 위해 층마다 다양한 간접 일광을 도입했다.
+                가 전시실과 중심 공간은 일련의 둥근 고리 모양의 환상체계로 연결, 서로 교차되게 설계함으로써 관람객이 동선을 선택할 수 있는 가능성을 제공하였다.
+                또한 본관 건물은 김환기의 작품을 최대한 고려하여 설계되어 있으며, 본관 2층 전시실의 경우, 김환기의 작품 중 100호 이상의 대작들로 이루어진 상설전의 공간으로 사용되고 있다.
+                본관 1층과 3층의 전시실은 김환기 기획전 및 기타 기획전시에 사용되고 있다.<br><br>
+            </p>
+        </div>
+        <h2 id="h2_2" style="color:rgb(50, 51, 53)">별관 Annex 1</h2>
+        <hr>
+        <div id='txt_2'>
+
+            <div class='img_box'><img src="별관.jpg" class='txt_img'> <img src="별관전시.jpg" class='txt_img'></div>
+            <p class='txt'>
+                환기 미술관 별관은 본관에 이어 1993년 11월에 완공되어 개관하였다.
+                별관은 지하, 지상 2층의 건물로, 카페테리아와 아트샵을 겸하고 있는 1층과 기획전 전용 전시실이 있는 2층으로 구성되어 있다.<br><br>
+                개방된 지하층은 주차장으로 이용하고 있다. 벼롼 건물 외관을 구성하는 재료 역시 주변 환경과 대배되지 않는 판재로 표현된 석재와 고압벽돌을 사용하였고 상부는 납을 입힌 동판으로 마무리하였다.<br><br>
+                내부 공간은 주로 흰벽으로 처리했으며, 공간의 폐쇄성을 해소하기 위해 전시실 상부의 창을 통한 간접 일광을 도입했다.<br><br>
+            </p>
+        </div>
+        <h2 id="h2_3" style="color:rgb(50, 51, 53)">수향산방 Annex 2</h2>
+        <hr>
+        <div id='txt_3'>
+
+            <div class='img_box' id='txt_3_img'><img src="수향산방.jpg" class='txt_img' ></div>
+            <p class='txt'>
+                수향산방은 1997년 11월에 완공되었으며, 건물의 디자인은 김환기 생전에 구상한 아뜰리에의 형태를 반영하였다.
+                "수향산방"이란 건물의 명칭은 작가가 애착했던 성북동 화실의 이름을 그대로 가져온 것이다.<br><br>
+                지하, 지상 2층의 건물로 현재 1층의 강의실을 중심으로 사용되고 있다.<br><br>
+            </p>
+        </div>
+    </section>
+    <footer>
+        <small>
+            <b><a href="https://www.facebook.com/whankimuseum" class='otherSite'
+                    target="_blank">FACEBOOK</a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com/whankimuseum/" class='otherSite'
+                    target="_blank">INSTAGRAM</a>&nbsp;&nbsp;
+                <a href="https://twitter.com/whankimuseum" class='otherSite' target="_blank">TWITTER</a></b>&nbsp;&nbsp;
+            <br><br>
+            주소: 서울특별시 종로구 자하문로 40길 63<br>
+            TEL: 02.391.7701
+            Copyright &copy; 2006 whanki museum. All rights reserved
+        </small>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>작품세계-환기 미술관</title>
+    <link type="text/css" rel="stylesheet" href="menu.css">
+    <link type="image/x-icon" rel="shortcut icon" href="logo.jpg">
+    
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+        section {
+            position: relative;
+            top: 15%;
+            left: 5%;
+            width: 90%;
+            padding-bottom:20%;
+
+        }
+
+        h1#title {
+            font-size: 30px;
+            opacity: 70%;
+            text-align: center;
+        }
+
+        div#will {
+            width: 100%;
+            height: 500px;
+            margin-top: 5%;
+            margin-left: 1%;
+
+        }
+
+        p {
+            text-align: center;
+        }
+
+        div.smallImg {
+            display: inline-block;
+            width: 16%;
+            height: 100%;
+            text-align: center;
+            font-size: 18px;
+            color: rgb(95, 94, 94);
+        }
+
+        img {
+            width: 100%;
+            height: 90%;
+        }
+        div.selectedImg {
+            display: none;
+            position: relative;
+            
+            margin-top: 10%;
+            width: 100%;
+            padding-top:2%;
+
+        }
+
+        h1#selectedTitle {
+            text-align: center;
+            margin-top: 7%;
+            margin-bottom: 2%;
+        }
+
+        div.largeImg {
+            display: inline-block;
+            width: 50%;
+            height: 70%;
+            margin-left: 5%;
+
+        }
+
+        div.selectedImg img {
+            width: 70%;
+            height: 600px;
+            margin-top: 5%;
+            margin-left: 16%;
+
+        }
+
+
+        div.imgInfo {
+            position: relative;
+            text-align: right;
+            top: 5%;
+            margin-right: 15%;
+            font-weight: bold;
+        }
+
+        div.text {
+            position: relative;
+            display: inline-block;
+            
+            padding: 5% 5% 5% 0%;
+            line-height: 180%;
+            width: 35%;
+            font-size: 17px;
+            text-align: justify;
+
+        }
+
+        #infoText5 {
+            font-size: 15px;
+        }
+        #text6{
+            position:relative;
+            padding-bottom:20%;
+        }
+       
+        #infoText6{
+            margin-top:-5%;
+            height:600px;
+        }
+        td.txt_m_gray{
+            font-weight:bold;
+            color:#494646;
+        }
+        span.txt_purple{
+            font-weight:bold;
+            color:#690f69;
+        }
+
+        
+    </style>
+    <script>
+        function Move(num) {
+            $(".selectedImg").css({ "display": "none" })
+            $("#text" + num).css({ "display": "block" })
+
+            var offset = $("#text" + num).offset();
+            $("html, body").animate({ scrollTop: offset.top }, 500);
+        }
+
+    </script>
+</head>
+
+<body>
+    <header>
+        <h1><a href="homie.html">환기 미술관<br>
+                <div class='en' id='first'>HWANKI MUSEUM</div>
+            </a></h1>
+        <nav id='top'>
+            <ul><b>
+                    <li class='topM'><a href='m1-1.html'>김환기<br>
+                            <div class='en'>KIMHWANKI</div>
+                        </a>
+                        <ul class='subM' id='sub1'>
+                            <li><a href='m1-1.html'>연보</a></li>
+
+                            <li><a href='m1-2.html'>작품세계</a></li>
+                        </ul>
+                    </li>
+                    <li class='topM'><a href='m2-1.html'>환기미술관<br>
+                            <div class='en'>ABOUT MUSEUM</div>
+                        </a>
+                        <ul class='subM' id='sub2'>
+                            <li><a href='m2-1.html'>설립자 메세지</a></li>
+                            <li><a href='m2-2.html'>디렉터 메세지</a></li>
+                            <li><a href='m2-3.html'>설계자 메세지</a></li>
+                            <li><a href='m2-4.html'>미술관 건물안내</a></li>
+                        </ul>
+                    </li>
+                    <li class='topM'><a href='m3-1.html'>전시안내<br>
+                            <div class='en'>EXHIBITION</div>
+                        </a>
+                        <ul class='subM' id='sub3'>
+                            <li><a href='m3-1.html'>현재전시</a></li>
+                            <li><a href='m3-2.html'>지난전시</a></li>
+                        </ul>
+                    </li>
+                    <li class='topM'><a href='m4.html' class='menuLink'>관람안내<br>
+                            <div class='en'>INFORMATION</div>
+                        </a></li>
+                </b>
+            </ul>
+            <nav>
+    </header>
+
+    <section>
+        <h1 id='title'>작품세계</h1>
+        <hr>
+        <div id='will'>
+            <p>알고싶은 시대의 그림을 클릭해보세요</p>
+            <br>
+            <b>
+                <div class='smallImg'><img src="종달새 노래할 때.jpg" id='Img1' onclick="Move('1')">일본유학시대<br>1933-1937</div>
+                <div class='smallImg'><img src="삼각산.jpg" id='Img2' onclick="Move('2')">서울시대<br>1937-1956</div>
+                <div class='smallImg'><img src="매화와 항아리.jpg" id='Img3' onclick="Move('3')">파리시대<br>1956-1959</div>
+                <div class='smallImg'><img src="운월.jpg" id='Img4' onclick="Move('4')">서울시대<br>1959-1963</div>
+                <div class='smallImg'><img src="무제10-70.jpg" id='Img5' onclick="Move('5')">뉴욕시대<br>1963-1974</div>
+                <div class='smallImg'><img src="무제07-74.jpg" id='Img6' onclick="Move('6')">사후전시<br>1974-1992</div>
+            </b>
+        </div>
+        <div class='selectedImg' id='text1'>
+            <h1 id='selectedTitle'>일본유학시대 (1933-1937)</h1>
+            <hr>
+            <div class='largeImg'>
+                <img src="종달새 노래할 때.jpg">
+                <div class='imgInfo'>종달새 노래할 때, 1935 캔버스에 유채<br>
+                    178x127 cm</div>
+            </div>
+
+            <div class='text'>
+                김환기의 일본 생활은 1931년 일본 니시기시로(錦城)중학교로 편입하면서 시작한다.<br><br>
+                화가로서의 일본유학시대는 2년 후인 1933년, 일본대학 예술학원 미술부에 입학부터라 할 수 있으며, 후지다 쓰구지, 도고 세이지 등에게 지도를 받게 된다. 이들은 당시 유럽에서 갓
+                귀국한유학파로써 김환기에게 자연스레 입체파와 미래파의 화풍을 사사하게 된다.<br><br>
+                김환기는 1937년 귀국 이전까지 자유전, 백만회 등의 활동을 하면서, 유영국, 문학수, 이중섭, 이규상 등과 교우로써 활동하였고 이후 이들은 한국 추상미술의 초석을 이룬다.
+                <br><br><br><br></div>
+        </div>
+        <div class='selectedImg' id='text2'>
+            <h1 id='selectedTitle'>서울시대 (1937-1956)</h1>
+            <hr>
+            <div class='largeImg'>
+                <img src="삼각산.jpg">
+                <div class='imgInfo'>삼각산, 1954 캔버스에 유채<br>
+                    55x36.5 cm</div>
+            </div>
+            <div class='text'>
+                일본 유학기를 마치고 한국으로 돌아온 김환기는 추상미술에 대해 교우들과 함께 단체를 결성하는 등 본격적인 활동을 시작한다.<br><br>
+                그러나, 한국 전쟁으로 인해 부산으로 피난을 가게되고, 해군 종군화가로 일하면서 부산 피난 시절을 표현하는 작품들을 남기게 된다.<br><br>
+                이 시기 그의 작품에는 바다, 천막, 여인, 항아리 등으로 피난지의 모습들을 묘사한 작품들이 근간을 이루며, 반 추상의 간결한 선들은 조형의 기본을 탐구하던 기하학적인 모습에서 두터운
+                마티에르속에 한국의 모습들을 표현하는 선으로 발전하게 된다.
+                <br><br><br><br></div>
+
+        </div>
+        <div class='selectedImg' id='text3'>
+            <h1 id='selectedTitle'>파리시대 (1956-1959)</h1>
+            <hr>
+            <div class='largeImg'>
+                <img src="매화와 항아리.jpg">
+                <div class='imgInfo'>매화와 항아리, 1957 캔버스에 유채<br>
+                    53x37 cm</div>
+            </div>
+            <div class='text'>
+                전쟁이 끝나고 그는 프랑스 파리에 터를 잡고 본격적인 추상화 작업에 들어가게 된다.<br><br>
+                이 시기 그는 주로 항아리, 십장생, 매화 등을 기본으로 한 추상정물화 작업을 하게 되며, 이는 후에 고국산천의 모습으로 발전하게 된다.
+                <br><br><br><br></div>
+
+        </div>
+        <div class='selectedImg' id='text4'>
+            <h1 id='selectedTitle'>서울시대 (1959-1963)</h1>
+            <hr>
+            <div class='largeImg'>
+                <img src="운월.jpg">
+                <div class='imgInfo'>운월, 1963 캔버스에 유채<br>
+                    193x129 cm</div>
+            </div>
+            <div class='text'>
+                이 시기 그의 작품은 한국의 자연을 노래한다.<br><br>
+                산, 달, 구름은 그의 주요 소재이며, 한국의 자연은 김환기의 손을 거치면서 푸른빛을 근간으로 한 간결한 추상화로 재탄생하게 된다.
+                <br><br><br><br></div>
+
+        </div>
+        <div class='selectedImg' id='text5'>
+            <h1 id='selectedTitle'>뉴욕시대 (1963-1974)</h1>
+            <hr>
+            <div class='largeImg'>
+                <img src="무제10-70.jpg">
+                <div class='imgInfo'>무제 10-VIII-70 코튼에 유채<br>
+                    288x213 cm</div>
+            </div>
+            <div class='text' id='infoText5'>
+                1963년 상파울루 비엔날레에 참석한 그는 미국행을 결심하게 되고, 과슈 스케치북 몇 권을 챙겨 미국으로 건너가게 된다.<br><br>
+                1964년부터 1970년 첫 점화의 형태가 나오기까지 엄청난 양의 추상화 실험들이 이뤄지게 되고, 점, 선, 면으로의 귀착을 위한 다양한 조형 연습들은 색면 추상, 십자구도, 산월 추상
+                등의 모습으로, 종이죽 및 신문지에 유채와 같은 다양한 재료로 남아있다.<br><br>
+                이 시기 그의 대표 장르인 '점화'가 탄생하는데, 점화는 캔버스에 유화 물감이라는 일반적인 서양화의 재료를 사용하면서 표현에 있어 자연스러운 번짐 효과를 더하여 세계적인 코드로의 한국
+                미술을 표현하는 그의 대표적인 장르다.<br><br>
+                점화는 1970년 한국일보사 주최 '대한민국미술대전'에서 대상을 수상한 '어디서 무엇이 되어 다시 만나랴'와 같이 점을 찍고 여러 겹의 네모를 둘러싸는 점화의 기본 스타일로 시작한다.
+                점화의 점들은 군을 이루며 면이 되고, 면들은 서로 나뉘고 모이고 회전하는 등의 다양한 형태로 변화한다.
+                <br><br><br><br></div>
+
+        </div>
+        <div class='selectedImg' id='text6'>
+            <h1 id='selectedTitle'>사후전시 (1974-1992)</h1>
+            <hr>
+            <div class='largeImg' id='largeImg6'>
+                <img src="무제07-74.jpg" >
+                <div class='imgInfo'>무제 07-VIII-74 코튼에 유채<br>
+                    234x183 cm</div>
+            </div>
+            <div class='text' id='infoText6' >
+                <table width="100%" cellspacing="0" cellpadding="0">
+                    <tbody>
+                        <tr align="left" valign="middle">
+                            <td width="60" class="txt_m_gray">1975</td>
+                            <td width="280" height="90"><span class="txt_purple">「환기 1961~74」</span>초대 회고전, &lt;산월&gt; 등
+                                15점 출품, 포인덱스터 화랑, 뉴욕
+                                상파울로 비엔날레 특별초대회고전<br>
+                                <span class="txt_purple">「김환기 대회고전 1936~74」</span>, 개인소장가 · 작가소장 등 160점 출품,
+                                국립현대미술관, 서울
+                            </td>
+                        </tr>
+                        <tr valign="middle">
+                            <td height="1" colspan="2" bgcolor="#CCCCCC"></td>
+                        </tr>
+                        <tr align="left" valign="middle">
+                            <td class="txt_m_gray">1977</td>
+                            <td height="60"><span class="txt_purple">「환기 1965~70」</span>, 포인덱스터 화랑, 뉴욕<br>
+                                <span class="txt_purple">「김환기 회고전」</span>, 동경화랑, 동경<br>
+                                <span class="txt_purple">「김환기 회고전 1954~74」</span>, 현대화랑, 서울
+                            </td>
+                        </tr>
+                        <tr valign="middle">
+                            <td height="1" colspan="2" bgcolor="#CCCCCC"></td>
+                        </tr>
+                        <tr align="left" valign="middle">
+                            <td class="txt_m_gray">1978</td>
+                            <td height="60"><span class="txt_purple">「김환기 1965~74」</span>, 1965년에서 1974년에 이르는 유화 15점 출품,
+                                <br>
+                                딘텐파스 화랑 · 포인덱스터 화랑 동시 개최, 뉴욕
+                            </td>
+                        </tr>
+                        <tr valign="middle">
+                            <td height="1" colspan="2" bgcolor="#CCCCCC"></td>
+                        </tr>
+                        <tr align="left" valign="middle">
+                            <td class="txt_m_gray">1978,79,<br>
+                                1980,83</td>
+                            <td height="45">파리 FIAC출품, 뉴욕 포인덱스터 화랑 대표로 출품</td>
+                        </tr>
+                        <tr valign="middle">
+                            <td height="1" colspan="2" bgcolor="#CCCCCC"></td>
+                        </tr>
+                        <tr align="left" valign="middle">
+                            <td class="txt_m_gray">1981</td>
+                            <td height="75"><span class="txt_purple">「김환기 1967~71」</span>, 1967년에서 1971년에 이르는 작품을 비롯한
+                                유화와
+                                오브제 출품, 딘덴파스 화랑, 뉴욕<br>
+                                <span class="txt_purple">「김환기 회고전」</span>, 현대화랑, 서울
+                            </td>
+                        </tr>
+                        <tr valign="middle">
+                            <td height="1" colspan="2" bgcolor="#CCCCCC"></td>
+                        </tr>
+                        <tr align="left" valign="middle">
+                            <td class="txt_m_gray">1982</td>
+                            <td height="60"><span class="txt_purple">「빛나는 항해전」</span>, 스케치북을 모아 출품, 포인덱스터 화랑, 뉴욕<br>
+                                <span class="txt_purple">「수화 김환기전 1963~70」</span>, 현대화랑, 서울
+                            </td>
+                        </tr>
+                        <tr valign="middle">
+                            <td height="1" colspan="2" bgcolor="#CCCCCC"></td>
+                        </tr>
+                        <tr align="left" valign="middle">
+                            <td class="txt_m_gray">1984</td>
+                            <td height="75"><span class="txt_purple">「김환기 스케치북전」</span>, 포인덱스터 화랑, 뉴욕<br>
+                                <span class="txt_purple">「김환기 10주기 회고전」</span>, 70여점의 국내 소장품과 뉴욕에서 제작한 대표작
+                                출품, 국립현대미술관, 서울<br>
+                                <span class="txt_purple">「김환기 기념전」</span>, 딘텐파스 화랑, 뉴욕
+                            </td>
+                        </tr>
+                        <tr valign="middle">
+                            <td height="1" colspan="2" bgcolor="#CCCCCC"></td>
+                        </tr>
+                        <tr align="left" valign="middle">
+                            <td class="txt_m_gray">1990</td>
+                            <td height="40"><span class="txt_purple">「드로잉 1953~1959」</span>, 현대화랑, 서울<br>
+                                <span class="txt_purple">「유화 1967~1968」</span>, 현대화랑, 서울
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+    </section>
+    <footer>
+        <small>
+            <b><a href="https://www.facebook.com/whankimuseum" class='otherSite'
+                    target="_blank">FACEBOOK</a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com/whankimuseum/" class='otherSite'
+                    target="_blank">INSTAGRAM</a>&nbsp;&nbsp;
+                <a href="https://twitter.com/whankimuseum" class='otherSite' target="_blank">TWITTER</a></b>&nbsp;&nbsp;
+            <br><br>
+            주소: 서울특별시 종로구 자하문로 40길 63<br>
+            TEL: 02.391.7701
+            Copyright &copy; 2006 whanki museum. All rights reserved
+        </small>
+    </footer>
+</body>
+
+</html>

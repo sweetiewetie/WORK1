@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>현재전시-환기미술관</title>
+    <link type="text/css" rel="stylesheet" href="menu.css">
+    <link type="image/x-icon" rel="shortcut icon" href="logo.jpg">
+    <script src="https://code.jquery.com/jquery-3.6.0.js"
+        integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
+    <style>
+        section {
+            position: relative;
+            top: 15%;
+            left: 20%;
+            width: 60%;
+            padding-bottom: 20%;
+
+        }
+
+        h1#title {
+            font-size: 30px;
+            opacity: 70%;
+            /* text-align: center; */
+        }
+
+        #main_txt {
+            font-size: 18px;
+        }
+
+        section #mainImage {
+            position: relative;
+            overflow: hidden;
+
+            left: -1%;
+            width: 105%;
+            height: 480px;
+        }
+
+        section #mainImage div.slide {
+            display: inline-block;
+            position: relative;
+            width: 30%;
+            margin-left: 1%;
+            margin-right: 1%;
+            animation: slide 8s 2 alternate;
+            animation-delay: 2s;
+            z-index: 0;
+
+        }
+
+        section #mainImage div.slide img {
+            width: 100%;
+            height: 480px;
+
+        }
+
+        @keyframes slide {
+            from {
+                top: 0%;
+
+            }
+
+            to {
+                top: -101%;
+            }
+        }
+
+        .title {
+            font-size: 20px;
+            font-weight: bold;
+        }
+
+        p#txt {
+            line-height: 200%;
+            text-align:justify;
+        }
+
+        div.letter {
+
+            width: 100%;
+            height: 50%;
+
+
+        }
+
+        #part_1_img {
+            display: inline-block;
+            width: 40%;
+            height: 50%;
+
+        }
+
+        #part_1_txt {
+
+            display: inline-block;
+            text-align: justify;
+            width: 40%;
+            height: 50%;
+            margin-left: 5%;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1><a href="homie.html">환기 미술관<br>
+                <div class='en' id='first'>HWANKI MUSEUM</div>
+            </a></h1>
+        <nav id='top'>
+            <ul><b>
+                    <li class='topM'><a href='m1-1.html'>김환기<br>
+                            <div class='en'>KIMHWANKI</div>
+                        </a>
+                        <ul class='subM' id='sub1'>
+                            <li><a href='m1-1.html'>연보</a></li>
+
+                            <li><a href='m1-2.html'>작품세계</a></li>
+                        </ul>
+                    </li>
+                    <li class='topM'><a href='m2-1.html'>환기미술관<br>
+                            <div class='en'>ABOUT MUSEUM</div>
+                        </a>
+                        <ul class='subM' id='sub2'>
+                            <li><a href='m2-1.html'>설립자 메세지</a></li>
+                            <li><a href='m2-2.html'>디렉터 메세지</a></li>
+                            <li><a href='m2-3.html'>설계자 메세지</a></li>
+                            <li><a href='m2-4.html'>미술관 건물안내</a></li>
+                        </ul>
+                    </li>
+                    <li class='topM'><a href='m3-1.html'>전시안내<br>
+                            <div class='en'>EXHIBITION</div>
+                        </a>
+                        <ul class='subM' id='sub3'>
+                            <li><a href='m3-1.html'>현재전시</a></li>
+                            <li><a href='m3-2.html'>지난전시</a></li>
+                        </ul>
+                    </li>
+                    <li class='topM'><a href='m4.html' class='menuLink'>관람안내<br>
+                            <div class='en'>INFORMATION</div>
+                        </a></li>
+                </b>
+            </ul>
+            <nav>
+    </header>
+    <section>
+        <h1 id='title'>현재 전시</h1>
+        <hr>
+        <br><br>
+
+        <div id='main_txt'><strong>환기미술관 특별기획전 ⟪김환기의 그랜드 투어 ‘파리통신’⟫<br>
+                WHANKI'S GRAND TOUR 'Paris Correspondence'</strong></div><br><br>
+        <div id='mainImage'>
+            <div class='slide'><img src="현재전시.jpg"><img src="paris2.jpg"></div>
+            <div class='slide'><img src="현재전시.jpg"><img src="paris1.jpg"></div>
+            <div class='slide'><img src="현재전시.jpg"><img src="paris3.jpg"></div>
+        </div>
+        <p id='txt'>
+            <b>2021-04-01 ~ 2021-08-29</b><br><br><br><br>
+        </p>
+        <div class='title'>Part I 김환기, 파리로 향하다.</div><br><br>
+
+        <div class='letter'>
+            <img src='part1_2.jpg' id='part_1_img'>
+
+            <div id='part_1_txt'>
+                <b>
+                    창 밖에 뭇 새가 지저귀오.<br>
+                    우거진 마로니에 숲에서 새들이 모여 사는 것 같소.<br>
+                    산처山妻가 나를 위해 이렇게 좋은 환경에 아뜨리에를 구해준 모양이오.<br>
+                    그래도 나는 아직도 다복한가봐.<br>
+                    파리에 오자마자 그냥 제작에 착수할 수 있는 이러한 화실에 들 수 있다는 것이 무조건
+                    감사하기까지
+                    하오. 또 바로 가까이 있는 뤽상부르 공원이 여간 마음에 들지가 않거든.<br> 나는 여길 자주
+                    산보하기로
+                    했고, 또 사생도 하기로 작정했소. 그리고 싶은 모티브가 산더미 같구려.<br><br>
+                    「파리 통신Ⅰ- 조각가 Y씨에게」, 김환기, 1956년</b><br><br>
+            </div><br><br><br><br>
+        </div>
+        <p id='txt'>
+            어린 시절 화업의 길을 꿈꾸었던 김환기는 10대 소년기에 일찌감치 유학을 떠나 서양문화에 한껏 열려있던 1930년대 도쿄에서 현대미술의 다양한 표현방식을 연마하며 청년기를 보냈습니다. 이후
+            창작활동에 몰입하며 자신이 추구해온 예술의 본질과 지향할 바에 대한 각성과 모색의 열망을 키운 그는 서양미술의 성지 ‘파리’에서의 장대한 모험을 꿈꾸다 마침내 지성과 예술의 기운이 넘실대는
+            파리로 ‘그랜드 투어’를 떠나게 됩니다.<br><br>
+            이미 국내에서의 창작과 미술계 활동이 충만하고 왕성하던 1956년 당시, 그의 나이 불혹지세- 갓 마흔을 넘어선 때였습니다.
+            <br><br>
+            ‘그랜드 투어’는 17~19세기 유럽에서 청년 교육의 정점으로 여겨졌습니다. 학교에서 전수되는 지식과 교양 습득을 넘어 대륙을 여행하는 긴 여정 속, 스스로 겪고 해결하는 실제의 경험을 통해
+            진정한 의식의 성장과 교양의 완성을 목적한 특별한 여행이었으며, 프랑스의 문화와 사회를 접하고 유럽의 역사와 이탈리아의 종교 예술을 느끼고 체험할 수 있었습니다. 동시에 다른 세계를 스스로
+            체험하고 배우고 소통함으로써 자신을 성찰하고 깨달아가는 성장은 나아가 사회의 변화를 촉진시키는 계기로 작용했습니다.
+        </p><br><br><br><br>
+        <div class='letter'>
+            <img src='part1_4.jpg' id='part_1_img'>
+
+            <div id='part_1_txt'>
+                <b>
+                    향사(香士)!<br>
+                    우리가 할 일은 좋은 그림 그리는 것 밖에 없잖소.<br>
+                    나 같은 젊은 사람이 벌써 건강이 말을 안 듣는구려.<br>
+                    그럴수록 마음은 바쁘고, 할 일은 태산같고.<br>
+                    그러나 향사! 우리들 그렇게 떨어져 있는 것 같지는 않소.<br>
+                    그 막막한 환경에서도 나으면 나았지, 결코 떨어져 있지는 않거든.<br>
+                    향사! 우선 파리에 나오실 계획하시고,
+                    돌아가면 화실 지을 생각하시오.<br>
+                    문제가 간단하잖소.<br>
+                    중섭형을 비롯하여 여러 화우들에게도 쉬이 편지 낼까 하오만,
+                    여기오니 도무지 시간이 없구려.<br>
+                    귀국하면 멀찌기 나가서 닭이나 치고 꽃이나 심고,
+                    진정 그림만 그려야겠소.<br>
+                    앞으로 얼마를 더 그리겠소?<br>
+                    참, 그리고 중섭 형 건강이 어떤지요? 알려주시오.<br>
+                    그럼 우선 몇 자 적었습니다.<br>
+                    부디 안녕하시와 좋은 그림 많이 그리시오.<br><br>
+                    「파리 통신 Ⅲ」 김환기, 1956년</b>
+            </div><br><br><br><br>
+        </div>
+        
+        <p id='txt'>
+        김환기 또한 문화예술의 중심지 ‘파리’에 4년간 머물면서 풍부한 역사와 문화와 예술의 보고를 향유했습니다. 현대미술 거장들의 작품을 보고 느끼며 자신의 예술세계를 돌아보았고 지향할 바에 대한
+        성찰과 확신의 기회로 삼았습니다. 그는 자신과 예술에 대한 각성과 탐구, ‘시정신詩精神’으로 불린 예술혼의 성찰과 창작의 실행 과정이 오롯이 담겨진 아름다운 작품들과 전시자료들을 남겼으며 이는
+        편지와 사진들 그리고 ‘파리통신’이라는 신문 기고문을 통해 고국의 지인과 독자들에게 전달되었습니다.
+        <br><br><br><br></p>
+        <div class='title'>Part II 김환기, 자신만의 세계를 발견하다.</div><br><br>
+        <div class='letter'>
+            <img src='part1_3.jpg' id='part_1_img'>
+
+            <div id='part_1_txt'>
+                <b>파리에 와서 정말 바쁘기만 하오.<br>
+                    하루 10시간에서 15시간을 일을 하고 있소.<br>
+                    그러지 않고는 당해 낼 수가 없구려.<br>
+                    그러기에 친구들께 편지도 못 쓰고 말공부도 못하고 있소.<br>
+                    내 예술은 하나 변하지가 않았소.<br>
+                    여전히 항아리를 그리고 있는데
+                    이러다간 종생 항아리 귀신만 될 것 같소.<br>
+                    여기 와서 느낀 것은 시정신(詩精神)이오.<br>
+                    예술에는 노래가 담겨야할 것 같소.<br>
+                    거장들의 작품에는 모두가 강력한 노래가 있구려.<br>
+                    지금까지 내가 부르던 노래가 무엇이었다는 것을
+                    나는 여기 와서 구체적으로 알게 된 것 같소.<br>
+                    밝은 태양을 파리에 와서 알아진 셈.<br><br>
+                    「파리 통신 Ⅱ」, 김환기, 1956년</b>
+                    
+            </div><br><br><br><br>
+        </div>
+        <p id='txt'>
+        김환기는 1956년~59년 파리로의 ‘그랜드 투어’를 통해 자신의 정체성과 예술의 본질에 대한 성찰의 기회를 갖습니다. 현대미술의 대가들을 직접 만나며 자신이 나아갈 길을 모색했고 세계적인
+        예술이 되기 위해서는 무엇보다 자신의 본질과 고유성에서 우러난 노래가 담겨야 함을 깨닫습니다. 이 과정에서 고국에서 애장하던 도자와 전통기물에 대한 그리움은 예술정체성으로 확립됩니다. 지구
+        반대편에서 심상心象으로 그려낸 항아리, 매화, 사슴, 새, 산월 같은 한국의 전통과 민족문화의 결합으로 탄생된 독창적 조형언어는 ‘시정신詩精神’이라는 예술철학으로 완성되어 이후 김환기의
+        작품세계에서도 끊임없이 발현됩니다.
+        <br><br><br><br></p>
+        
+    </section>
+    <footer>
+        <small>
+            <b><a href="https://www.facebook.com/whankimuseum" class='otherSite'
+                    target="_blank">FACEBOOK</a>&nbsp;&nbsp;
+                <a href="https://www.instagram.com/whankimuseum/" class='otherSite'
+                    target="_blank">INSTAGRAM</a>&nbsp;&nbsp;
+                <a href="https://twitter.com/whankimuseum" class='otherSite' target="_blank">TWITTER</a></b>&nbsp;&nbsp;
+            <br><br>
+            주소: 서울특별시 종로구 자하문로 40길 63<br>
+            TEL: 02.391.7701
+            Copyright &copy; 2006 whanki museum. All rights reserved
+        </small>
+    </footer>
+</body>
+
+</html>
